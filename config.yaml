@@ -1,0 +1,15 @@
+monitor:
+  ssh_failed: true
+  sudo_usage: true
+  user_status: true
+  ports: true
+  external_ip:
+    enabled: true 
+    top_n: 5     
+  
+  sensitive_file:
+    enabled: true
+    paths:     
+      - /etc/passwd
+      - /etc/shadow
+
